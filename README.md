@@ -1,6 +1,6 @@
-# loic -- Low Orbital Ion Cannon Load Tester
+# LOIC -- Low Orbital Ion Cannon Load Tester
 
-This is a fork of the (Emily Eisenberg)[https://github.com/xymostech] (loic)[https://github.com/xymostech/loic] project.
+This is a fork of the [Emily Eisenberg](https://github.com/xymostech) [loic](https://github.com/xymostech/loic) project, a command line implementation of LOIC (Low Orbital Ion Cannon Load Tester)
 
 ## Get started
 Two flavours are available:
