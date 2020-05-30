@@ -1,6 +1,6 @@
 # LOIC -- Low Orbital Ion Cannon Load Tester
 
-This is a fork of the [Emily Eisenberg](https://github.com/xymostech)'s [loic](https://github.com/xymostech/loic) project, a command line implementation of [LOIC (Low Orbital Ion Cannon Load Tester)](https://en.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) written in [C](https://en.wikipedia.org/wiki/C_%28programming_language%29)
+This is a fork of the [Emily Eisenberg](https://github.com/xymostech)'s [loic](https://github.com/xymostech/loic) project, a command line implementation of [LOIC (Low Orbital Ion Cannon Load Tester)](https://en.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) written in [C](https://en.wikipedia.org/wiki/C_%28programming_language%29), forked specifically to build onto a Docker image and atempting to build for Windows (using [MinGW](https://en.wikipedia.org/wiki/MinGW)).
 
 ## Get started
 Two flavours are available:
