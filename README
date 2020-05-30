@@ -1,4 +1,0 @@
-loic -- Low Orbital Ion Cannon Load Tester
-
-Downloads information from a webserver very quickly
-Uses pthreads and raw stream sockets to download
