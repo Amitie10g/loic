@@ -5,8 +5,7 @@
 #include <string.h>
 #include <pthread.h>
 #include <sys/types.h>
-#include <sys/socket.h>
-#include <netdb.h>
+#include <winsock.h>
 #include <fcntl.h>
 #include <time.h>
 
