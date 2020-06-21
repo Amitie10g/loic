@@ -1,23 +1,23 @@
 # LOIC -- Low Orbital Ion Cannon Load Tester (MinGW) (WIP)
 
-This is a fork of the [Emily Eisenberg](https://github.com/xymostech)'s [loic](https://github.com/xymostech/loic) project, a command line implementation of [LOIC (Low Orbital Ion Cannon Load Tester)](https://en.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) written in [C](https://en.wikipedia.org/wiki/C_%28programming_language%29), forked specifically to build onto a Docker image and atempting to build for Windows (using [MinGW](https://en.wikipedia.org/wiki/MinGW)).
+This is a fork of the [Emily Eisenberg](https://github.com/xymostech)'s [loic](https://github.com/xymostech/loic) project, a command line implementation of [LOIC (Low Orbital Ion Cannon Load Tester)](https://en.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) written in [C](https://en.wikipedia.org/wiki/C_%28programming_language%29), forked specifically to <s>build onto a Docker image and</s> atempting to build for Windows (using [MinGW](https://en.wikipedia.org/wiki/MinGW)).
 
-**This branch is just an experiment, an atemp to build loic-cli using [MinGW](https://en.wikipedia.org/wiki/MinGW).**
-
-## Get started
-Two flavours are available:
-* Statically linked ELF executable (see the [Release](https://github.com/Amitie10g/loic/releases/tag/0.1) for more information)
-* [Docker container](https://hub.docker.com/r/amitie10g/loic-cli) (Alpine)
-
-## Requiriments:
-* None, as the ejecutable is statically linked
+*If you use **Brave Browser**, please consider **donating some BAT** to me. If you don't have **Brave Browser**, **[download it now](https://brave.com/ami810)** and get rid annoying ads.*
 
 ## Usage
 * ``loic <domain>`` (from Releases)
-* ``docker run amitie10g/loic-cli <domain>`` (using Docker)
+
+## Building
+* For your convenience, you can use the [GCC Docker container image](https://hub.docker.com/_/gcc)
+  ```
+  git clone https://github.com/Amitie10g/loic-cli.git
+  cd loic-cli
+  docker run -v $(pwd):/root -w /root gcc make
+  ```
+  The Makefile instructs to build a static ejecutable.
 
 ## TODO
-I'm attempting to make a Windows executable, using MinGW
+I'm attempting to make a Windows executable, using MinGW. However, should be better to use well-known [.NET-based LOIC](https://github.com/NewEraCracker/LOIC).
 
 ## Why?
 Just for fun
