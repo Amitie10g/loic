@@ -4,20 +4,23 @@ This is a fork of the [Emily Eisenberg](https://github.com/xymostech)'s [loic](h
 
 *If you use **Brave Browser**, please consider **donating some BAT** to me. If you don't have **Brave Browser**, **[download it now](https://brave.com/ami810)** and get rid annoying ads.*
 
-## Get started
-Two flavours are available:
-* Statically linked ELF executable (see the [Release](https://github.com/Amitie10g/loic/releases/tag/0.1) for more information)
-* [Docker container](https://hub.docker.com/r/amitie10g/loic-cli)
-
-## Requiriments:
-* None, as the ejecutable is statically linked
-
 ## Usage
 * ``loic <domain>`` (from Releases)
-* ``docker run amitie10g/loic-cli <domain>`` (using Docker)
+
+## Downloading
+* Standalone executable is available at [Releases](https://github.com/Amitie10g/loic-cli/releases/tag/0.1)
+
+## Building
+* For your convenience, you can use the [GCC Docker container image](https://hub.docker.com/_/gcc)
+  ```
+  git clone https://github.com/Amitie10g/loic-cli.git
+  cd loic-cli
+  docker run -v $(pwd):/root -w /root gcc make
+  ```
+  The Makefile instructs to build a static ejecutable.
 
 ## TODO
-I'm attempting to make a Windows executable, using MinGW
+I'm attempting to make a Windows executable, using MinGW. However, should be better to use well-known [.NET-based LOIC](https://github.com/NewEraCracker/LOIC).
 
 ## Why?
 Just for fun
